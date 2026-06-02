@@ -1,9 +1,19 @@
+const nextBtn = document.getElementById("next-btn");
+const prevBtn = document.getElementById("prev-btn");
+
 // HTML se Elements ko uthana
 const audio = document.getElementById("main-audio");
 const playBtn = document.getElementById("play-btn");
 const progress = document.getElementById("progress");
 
 let isPlaying = false;
+const songs = [
+    "./assets/song1.mp3",
+    "./assets/song2.mp3",
+    "./assets/song3.mp3"
+];
+
+let currentSong = 0;
 
 // Play aur Pause karne ka dimaag
 
@@ -39,4 +49,34 @@ audio.addEventListener("timeupdate", () => {
 progress.addEventListener("input", () => {
     const shadowTime = (progress.value * audio.duration) / 100;
     audio.currentTime = shadowTime;
+});
+
+nextBtn.addEventListener("click", () => {
+
+    currentSong++;
+
+    if (currentSong >= songs.length) {
+        currentSong = 0;
+    }
+
+    audio.src = songs[currentSong];
+    audio.play();
+
+    isPlaying = true;
+    playBtn.src = "./assets/pause_icon.png";
+});
+
+prevBtn.addEventListener("click", () => {
+
+    currentSong--;
+
+    if (currentSong < 0) {
+        currentSong = songs.length - 1;
+    }
+
+    audio.src = songs[currentSong];
+    audio.play();
+
+    isPlaying = true;
+    playBtn.src = "./assets/pause_icon.png";
 });
