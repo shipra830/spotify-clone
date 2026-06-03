@@ -67,8 +67,8 @@
         <h2>Recently Played</h2>
         <div class="cards-container">
             <div class="card">
-              <img src="assets/card1img.jpeg" class="card-img">
-              <p class="card-title">Top 50 - Globle</p>
+              <img src="./assets/card1img.jpeg" class="album-img" id="album-cover">
+             <p class="song-title">Top 50 - Global</p>
               <p class="card-info">Your daily updates of the played...</p>
             </div>
           </div>
@@ -121,6 +121,13 @@
               <p class="card-info">Your daily updates of the played...</p>
             </div>
         </div>
+        <h2>Your Playlist</h2>
+
+<div class="playlist">
+    <p class="playlist-song" data-index="0">🎵 Song 1</p>
+    <p class="playlist-song" data-index="1">🎵 Song 2</p>
+    <p class="playlist-song" data-index="2">🎵 Song 3</p>
+</div>
           <div class="footer">
             <div class="line"></div>
           </div>
@@ -133,12 +140,14 @@
         <div class="album">
             <img src="./assets/card1img.jpeg" class="album-img">
             <div class="album-info">
-                <p class="song-title">Top 50 - Global</p>
-                <p class="song-artist">Spotify</p>
+                <p class="song-title" id="song-title">Top 50 - Global</p>
+               <p class="song-artist" id="song-artist">Spotify</p>
             </div>
         </div>
         <div class="player">
             <div class="player-controls">
+                <i class="fa-solid fa-shuffle player-control-icon" id="shuffle-btn"></i>
+                <i class="fa-solid fa-repeat player-control-icon" id="repeat-btn"></i>
                 <img src="./assets/player_icon1.png" class="player-control-icon">
                 <img src="./assets/player_icon2.png"
 class="player-control-icon"
@@ -155,13 +164,26 @@ id="next-btn">
                 <img src="./assets/player_icon5.png" class="player-control-icon">
             </div>
             <div class="playback-bar">
-                <span class="curr-time">00:00</span>
-                <input type="range" min="0" max="100" class="progress-bar" id="progress"  step="1">
-                <span class="tot-time">3:33</span>
-            </div>
+    <span class="curr-time" id="curr-time">0:00</span>
+
+    <input type="range"
+           min="0"
+           max="100"
+           class="progress-bar"
+           id="progress"
+           step="1">
+
+    <span class="tot-time" id="tot-time">0:00</span>
+</div>
         </div>
         <div class="controls">
             <img src="./assets/play_musicbar.png" class="control-icon">
+            <input type="range"
+       min="0"
+       max="100"
+       value="100"
+       id="volume-slider"
+       class="volume-slider">
         </div>
     </div>
   <script src="app.js"></script>
