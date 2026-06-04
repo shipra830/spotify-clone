@@ -69,14 +69,15 @@ Through this project, I gained practical experience in:
 - Frontend Development Best Practices
 - Project Deployment using Vercel
 
-## 📸 Screenshot
+## 📸 Screenshots
 
-Add a screenshot of the project here.
+### Homepage
 
-Example:
+![Spotify Homepage](assets/spotify-homepage.png)
 
-```md
-![Spotify Clone](assets/screenshot.png)
+### Music Player
+
+![Spotify Player](assets/spotify-player.png)
 ```
 
 ## 🔮 Future Enhancements
