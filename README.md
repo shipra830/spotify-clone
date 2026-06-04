@@ -78,7 +78,6 @@ Through this project, I gained practical experience in:
 ### Music Player
 
 ![Spotify Player](assets/spotify-player.png)
-```
 
 ## 🔮 Future Enhancements
 
