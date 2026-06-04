@@ -68,16 +68,15 @@ Through this project, I gained practical experience in:
 - JavaScript Logic Building
 - Frontend Development Best Practices
 - Project Deployment using Vercel
-
 ## 📸 Screenshots
 
 ### Homepage
 
-![Spotify Homepage](assets/spotify-homepage.png)
+![Spotify Homepage](./spotify-homepage.png)
 
 ### Music Player
 
-![Spotify Player](assets/spotify-player.png)
+![Spotify Player](./spotify-player.png)
 
 ## 🔮 Future Enhancements
 
